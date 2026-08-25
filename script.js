@@ -1,0 +1,5 @@
+const cart=[];const count=document.getElementById('cartCount');const modal=document.getElementById('modal');const items=document.getElementById('items');const total=document.getElementById('total');
+document.querySelectorAll('.buy button').forEach(b=>b.addEventListener('click',()=>{cart.push({name:b.dataset.name,price:Number(b.dataset.price)});count.textContent=cart.length;render();modal.classList.add('open')}));
+function render(){items.innerHTML=cart.length?cart.map(i=>`<div class="cartline"><span>${i.name}</span><strong>R$ ${i.price.toFixed(2).replace('.',',')}</strong></div>`).join(''):'<p>Seu carrinho está vazio.</p>';const t=cart.reduce((s,i)=>s+i.price,0);total.textContent='R$ '+t.toFixed(2).replace('.',',')}
+document.getElementById('cartBtn').onclick=document.getElementById('openCart').onclick=()=>{render();modal.classList.add('open')};document.getElementById('close').onclick=()=>modal.classList.remove('open');modal.onclick=e=>{if(e.target===modal)modal.classList.remove('open')};
+document.getElementById('menu').onclick=()=>document.getElementById('nav').classList.toggle('open');

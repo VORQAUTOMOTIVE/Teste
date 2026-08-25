@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#050505">
+  <meta name="description" content="VORQ Automotive — streetwear e cultura automotiva.">
+  <title>VORQ Automotive</title>
+  <link rel="stylesheet" href="./style.css?v=4">
+</head>
+<body>
+  <div class="topbar">VORQ AUTOMOTIVE • ATÉ 3X SEM JUROS NO CARTÃO</div>
+
+  <header class="header">
+    <a class="logo" href="#inicio">VOR<span>Q</span><small>AUTOMOTIVE</small></a>
+    <button class="menu" id="menu" aria-label="Abrir menu">☰</button>
+    <nav id="nav">
+      <a href="#inicio">Início</a><a href="#kits">Kits</a><a href="#sobre">Sobre</a><a href="#contato">Contato</a>
+    </nav>
+    <button class="cart" id="cartBtn">🛒 <b id="cartCount">0</b></button>
+  </header>
+
+  <main>
+    <section class="hero" id="inicio">
+      <div class="hero-copy">
+        <div class="eyebrow">VORQ AUTOMOTIVE</div>
+        <h1>MOVIDO POR<br><span>DESEMPENHO.</span></h1>
+        <h2>CRIADO PARA QUEM VIVE A RUA.</h2>
+        <p>Streetwear, acessórios e identidade racing para quem transforma paixão automotiva em estilo.</p>
+        <div class="checks"><span>✓ QUALIDADE PREMIUM</span><span>✓ DESIGN EXCLUSIVO</span><span>✓ DNA RACING</span></div>
+        <a class="primary" href="#kits">VER TODOS OS KITS →</a>
+      </div>
+      <div class="hero-art"><div class="speedline"></div><div class="bigmark">VORQ</div><div class="racing-label">RACING DIVISION</div></div>
+    </section>
+
+    <section class="benefits">
+      <div><strong>🏁 DNA RACING</strong><small>Estilo inspirado nas pistas</small></div>
+      <div><strong>🔥 EDIÇÕES ESPECIAIS</strong><small>Produtos exclusivos</small></div>
+      <div><strong>🎁 BRINDES</strong><small>Surpresas em pedidos</small></div>
+      <div><strong>💳 ATÉ 3X SEM JUROS</strong><small>No cartão</small></div>
+    </section>
+
+    <section class="catalog" id="kits">
+      <header class="section-title">
+        <div class="eyebrow">COLEÇÃO VORQ</div>
+        <h2>KITS QUE CARREGAM <span>ATITUDE.</span></h2>
+        <p>Quatro propostas, uma identidade: performance, rua e cultura automotiva.</p>
+      </header>
+
+      <div class="products">
+        <article class="product">
+          <div class="photo"><img src="./assets/kit-01.png?v=4" alt="Kit 01 Apex Street"></div>
+          <div class="info"><div class="kit">KIT 01</div><h3>APEX STREET</h3><p>Camiseta oversized + calça cargo + boné + meias + adesivo.</p><div class="buy"><strong>R$ 249,90</strong><button data-name="APEX STREET" data-price="249.90">COMPRAR</button></div></div>
+        </article>
+        <article class="product">
+          <div class="photo"><img src="./assets/kit-02.png?v=4" alt="Kit 02 Racing"></div>
+          <div class="info"><div class="kit">KIT 02</div><h3>RACING</h3><p>Camiseta racing + corta-vento + calça esportiva + boné + luvas.</p><div class="buy"><strong>R$ 399,90</strong><button data-name="RACING" data-price="399.90">COMPRAR</button></div></div>
+        </article>
+        <article class="product featured">
+          <span class="badge">EDIÇÃO LIMITADA</span>
+          <div class="photo"><img src="./assets/kit-03.png?v=4" alt="Kit 03 Apex Limited"></div>
+          <div class="info"><div class="kit">KIT 03</div><h3>APEX LIMITED</h3><p>Jaqueta premium + camiseta + calça + boné + bolsa + chaveiro.</p><div class="buy"><strong>R$ 449,90</strong><button data-name="APEX LIMITED" data-price="449.90">COMPRAR</button></div></div>
+        </article>
+        <article class="product">
+          <div class="photo"><img src="./assets/kit-04.png?v=4" alt="Kit 04 Racing Red"></div>
+          <div class="info"><div class="kit">KIT 04</div><h3>RACING RED</h3><p>Kit vermelho e preto com presença forte e inspiração automobilística.</p><div class="buy"><strong>R$ 549,90</strong><button data-name="RACING RED" data-price="549.90">COMPRAR</button></div></div>
+        </article>
+      </div>
+    </section>
+
+    <section class="about" id="sobre">
+      <div><div class="eyebrow">RACING CULTURE</div><h2>FEITO PARA QUEM<br><span>AMA CARROS.</span></h2><p>A VORQ une cultura automotiva e streetwear em uma estética escura, agressiva e premium.</p></div>
+      <div class="about-logo">VOR<span>Q</span><small>RACING DIVISION</small></div>
+    </section>
+
+    <section class="cta" id="contato"><div class="eyebrow">VORQ AUTOMOTIVE</div><h2>SEU CARRO. <span>SEU ESTILO.</span></h2><p>Escolha seu kit e monte seu pedido.</p><button class="primary" id="openCart">VER MEU PEDIDO</button></section>
+  </main>
+
+  <footer><b>VORQ AUTOMOTIVE</b><span>Instagram: @VORQAutomotive</span><span>© 2026 VORQ Automotive</span></footer>
+
+  <div class="modal" id="modal">
+    <div class="modalbox"><button class="close" id="close">×</button><div class="eyebrow">SEU PEDIDO</div><h2>CARRINHO VORQ</h2><div id="items"></div><div class="total">TOTAL <strong id="total">R$ 0,00</strong></div></div>
+  </div>
+
+  <script src="./script.js?v=4"></script>
+</body>
+</html>
